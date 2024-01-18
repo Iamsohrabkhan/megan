@@ -10,7 +10,7 @@ const lora = Lora({ subsets: ['latin'] })
 export const metadata = {
   title: "Megan Lacefield",
   description: "Ever wondered what fuels an entrepreneur inspiration? Here the inside scoop! Dive into my world of tried-and-true favorites—my wellness and beauty essentials, go-to tech, and seamless life and business tools. Peek into my (admittedly chaotic) closet for the staples I can nott do without. Seeking a simpler, decluttered, and more effective life? You will adore what resonates with me.",
-  keywords:["nextJS", "reactJS", "personal website", "personal portfolio", "portfolio", "framer motion", "framer motion developer"],
+
     twitter: {
     card: "summary_large_image",
   },
@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={lora.className}>
+      <body className={`overflow-y-hidden ${lora.className}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
