@@ -8,8 +8,8 @@ const ChipTabs = ({ tabs }) => {
 
   return (
     <div>
-      <div className="px-4 py-4 bg-[#7C96A6] flex items-center flex-wrap gap-6">
-        <h3 className="ml-40 mr-12 italic">Catagories:</h3>
+      <div className="px-4 py-4 bg-[#7C96A6] md:flex md:items-center md:flex-wrap md:gap-6">
+        <h3 className="md:ml-40 md:mr-12 italic">Catagories:</h3>
         {tabs.map((tab) => (
           <Chip
             text={tab}

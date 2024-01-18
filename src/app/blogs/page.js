@@ -1,5 +1,5 @@
 
-import ChipTabs from "./tabs";
+// import ChipTabs from "./tabs";
 import BlogCard from "./blogcard";
 import BlogHeading from "./blogheading";
 import { client } from "../../../sanity/lib/client";
@@ -10,13 +10,13 @@ const posts=await getData();
  return( 
  <section>
     <BlogHeading />
-    <ChipTabs tabs={tabs} />
+    {/* <ChipTabs tabs={tabs} /> */}
     <BlogCard posts={posts} />
   </section>
   )
 ;
 }
-const tabs = ["All", "Family-Friendship", "Marriage", "LifeStyle"];
+// const tabs = ["All", "Family-Friendship", "Marriage", "LifeStyle"];
 
 const getData= async()=>{
   const query = `*[_type == "post"] {

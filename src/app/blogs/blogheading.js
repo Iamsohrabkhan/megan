@@ -1,12 +1,14 @@
 import { Input } from '@/components/ui/input'
+import { Separator } from '@/components/ui/separator'
 
 const BlogHeading = () => {
   return (
-    <div className="flex justify-around py-16">
+    <>
+    <div className="flex justify-around items-center flex-col md:flex-row space-y-4 py-1 container mx-auto ">
     <p className="leading-4 italic">
-      Branding expertise for the <br /> creative entrepreneur.
+      Branding expertise for the <br className='none md:block' /> creative entrepreneur.
     </p>
-    <h2>the blog</h2>
+    <h2 className='text-6xl -order-1 md:order-none mb-8 md:mb-0 md:text-4xl  '>the blog</h2>
     <div className="serch flex relative justify-center items-center w-64">
 
       <Input type="name" placeholder="Search the blog" className="w-full p-3 rounded-lg" />
@@ -26,6 +28,10 @@ const BlogHeading = () => {
       </svg>
     </div>
   </div>
+  <div className="container max-w-screen-xl">
+    <Separator className="my-4" />
+  </div>
+    </>
   )
 }
 
