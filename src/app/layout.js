@@ -21,7 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`overflow-x-hidden ${lora.className}`}>
+      <body className={`overflow-x-hidden ${lora.className} `}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

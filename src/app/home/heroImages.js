@@ -48,7 +48,7 @@ export default function HeroImages() {
 
 const Card = ({ src, alt }) => {
   return (
-    <div className="relative w-56 lg:w-64 aspect-square rounded-xl">
+    <div className="relative w-48 lg:w-64 aspect-square rounded-xl">
       <Image src={src} alt={alt} className="rounded object-cover" fill />
     </div>
   );
